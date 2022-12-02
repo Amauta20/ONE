@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+
+<h1>Calculo de Consumo</h1>
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script type="text/javascript">
+
+    var tanque = 40;
+
+    var tipoTanque = "Gasolina";
+    var kmRecorridos = 480;
+    
+    var eficiencia = kmRecorridos/tanque;
+
+    document.write("<h4>Tanque de " + tipoTanque + "</h4>");
+    document.write("Eficiencia del tanque de " + tipoTanque + "es de " + eficiencia.toFixed(2));
+    document.write("<br>");
+    document.write("<br>");
+
+    tipoTanque = "Alcohol";
+    kmRecorridos = 300;
+
+    eficiencia = kmRecorridos/tanque;
+
+    document.write("<h4>Tanque de " + tipoTanque + "</h4>");
+    document.write("Eficiencia del tanque de " + tipoTanque + "es de " + eficiencia.toFixed(2));
+    document.write("<br>");
+    document.write("<br>");
+
+</script>
