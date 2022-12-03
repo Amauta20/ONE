@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+
+    function saltolinea(){
+        document.write("<br><br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea();
+    }
+
+    function diferenciaEdad(edad1, edad2){
+        var diferencia = edad1 - edad2;
+        return diferencia;
+    }
+
+    var edadHumano1 = 50;
+    var edadHumano2 = 35;
+
+    imprimir("<h1>Diferencia de Edades</h1>");
+    imprimir("Edad primera persona " + edadHumano1 + " años");
+    imprimir("Edad segunda persona " + edadHumano2 + " años");
+    imprimir("La diferencia de edad es: " + diferenciaEdad(edadHumano1, edadHumano2) + " años");
+
+</script>
