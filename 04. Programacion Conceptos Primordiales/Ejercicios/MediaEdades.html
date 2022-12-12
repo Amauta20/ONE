@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>Media de las Edades de Familiares</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroFamiliares = parseInt(prompt("Ingrese el numero de familiares"));
+    var contador = 1;
+    var edades = 0;
+    var sumaEdades = 0;
+    var media = 0;
+
+    imprimir("El numero de familiares es " + numeroFamiliares);
+    saltarLinea();
+
+    while(numeroFamiliares >= contador){
+        edades = parseInt(prompt("Ingrese la edad del familiar " + contador));
+        imprimir("La edad del familiar " + contador + " es " + edades);
+        sumaEdades = sumaEdades + edades;
+        contador++;
+    }
+
+    media = sumaEdades/numeroFamiliares;
+    saltarLinea();
+    imprimir("La media de las edades es de " + media);
+    
+
+</script>

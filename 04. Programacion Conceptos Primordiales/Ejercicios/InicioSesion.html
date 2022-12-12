@@ -1,0 +1,44 @@
+<meta charset="utf-8">
+<h1>Inicio de sesión</h1>
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea;
+    }
+
+    function alerta(datos){
+        alert(datos);
+    }
+
+    var numeroIntentos =3;
+    var contador=1;
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    while(numeroIntentos >= contador){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+
+        contador++;
+    }
+
+    if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            imprimir("Bienvenido al sistema " + inicioDeSesionIngresado);
+        } else {
+            imprimir("inicio de sesión inválido. Favor intente de nuevo");
+        }
+
+</script>

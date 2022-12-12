@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<h1>Calcúlar el IMC</h1>
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea();
+    }
+
+    function calcularIMC(peso, altura){
+        imc = peso/(altura * altura);
+        return imc
+    }
+    
+    imprimir("El promedio del IMC de Ricardo y Felipe es " + ((calcularIMC(75, 1.60) + calcularIMC(80, 1.75))/2));
+
+</script>

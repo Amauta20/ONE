@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+<h1>Calcúlar el IMC</h1>
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea();
+    }
+
+    function calcularIMC(nombre, peso, altura){
+        imc = peso/(altura * altura);
+        imprimir("El IMC de " + nombre + " es de " + imc.toFixed(2));
+        saltolinea();
+        return imc
+    }
+    
+    var nombre = prompt("Ingrese el nombre");
+    var peso = prompt(nombre + " ingrese peso en Kg");
+    var altura = prompt(nombre + " ingrese altura en m");
+
+    calcularIMC(nombre, peso, altura)
+
+    if (imc <= 18.5){
+        imprimir(nombre + " tiene imc debajo de lo recomendado");
+    }
+
+    if (imc >18.5){
+        if (imc <= 25){
+            imprimir(nombre + " tiene imc recomendado");
+        }
+    }
+
+    if (imc >25){
+        if (imc <= 30){
+            imprimir(nombre + " tiene imc con sobrepeso");
+        }
+    }
+
+    if (imc > 30){
+        imprimir(nombre + " tiene imc con obesidad");
+    }
+
+</script>

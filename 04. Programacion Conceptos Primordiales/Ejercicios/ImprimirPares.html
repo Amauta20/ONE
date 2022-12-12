@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Todos los números pares del 1 al 100</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numeroInicial = 0;
+    var contador = 2;
+
+    while(contador <= 100){
+        imprimir(numeroInicial + contador);
+        contador = contador + 2;
+    }
+
+    imprimir("FIN");
+
+</script>

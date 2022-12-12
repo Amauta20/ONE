@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<h1>Calcúlar Puntos Hoy y Comparar</h1>
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea();
+    }
+
+    function calcularPuntos(equipo, partidosGanados, partidosEmpatados, partidosPerdidos){
+        puntos = partidosGanados * 3 + partidosGanados * 1 + partidosPerdidos *0;
+        return puntos;
+    }
+    
+    var equipo = prompt("Ingrese el nombre del equipo:");
+    var pGanados = parseInt(prompt("Partidos Ganados de " + equipo));
+    var pEmpatados = parseInt(prompt("Partidos Empatados de " + equipo));
+    var pPerdidos = parseInt(prompt("Partidos Perdidos de " + equipo));
+    var pPuntos = parseInt(prompt("Puntos del año anterior de " + equipo));
+
+    calcularPuntos(equipo, pGanados, pEmpatados, pPerdidos);
+
+    if (puntos > pPuntos) {
+        imprimir(equipo + " esta mejor que el año pasado");
+    }
+
+    if (puntos == pPuntos) {
+        imprimir(equipo + " esta igual que el año pasado");
+    }
+
+    if (puntos < pPuntos) {
+        imprimir(equipo + " esta peor que el año pasado");
+    }
+
+
+</script>

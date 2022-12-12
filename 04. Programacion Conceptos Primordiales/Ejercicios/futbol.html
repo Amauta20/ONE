@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<h1>Calcúlar Puntos de un Equipo de Futbol</h1>
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea();
+    }
+
+    function calcularPuntos(equipo, partidosGanados, partidosEmpatados, partidosPerdidos){
+        puntos = partidosGanados * 3 + partidosGanados * 1 + partidosPerdidos *0;
+        promedio = puntos / (partidosGanados + partidosEmpatados + partidosPerdidos);
+
+        imprimir("El equipo: " + equipo);
+        imprimir("Realizo " + puntos + " puntos en esta temporada");
+        imprimir("El promedio de puntos por partido es de " + promedio);
+
+    }
+    
+    var equipo = prompt("Ingrese el nombre del equipo:");
+    var pGanados = parseInt(prompt("Partidos Ganados de " + equipo));
+    var pEmpatados = parseInt(prompt("Partidos Empatados de " + equipo));
+    var pPerdidos = parseInt(prompt("Partidos Perdidos de " + equipo));
+
+    calcularPuntos(equipo, pGanados, pEmpatados, pPerdidos);
+
+
+</script>

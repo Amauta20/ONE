@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<h1>Mostrar Texto</h1>
+
+<input/>
+<button>Mostrar texto escrito</button>
+
+<script>
+
+    function saltolinea(){
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje){
+        document.write(mensaje);
+        saltolinea;
+    }
+
+    function alerta(datos){
+        alert(datos);
+    }
+
+    var input = document.querySelector("input");
+    input.focus();
+    
+    function mostrarTexto(){
+        alerta(input.value);
+        input.value = "";
+        input.focus();
+    }
+
+
+
+    var button = document.querySelector("button");
+    button.onclick = mostrarTexto;
+
+</script>

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Año Mundial de Futbol</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br><br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var anhoMundial = 1930;
+    var anhoLimite = parseInt(prompt("Ingrese el año limite de mundial"));
+
+    imprimir("El primer mundial se desarrollo en " + anhoMundial);
+
+    while (anhoMundial < anhoLimite){
+        imprimir("El mundial se desarrollo en " + anhoMundial)
+        anhoMundial = anhoMundial + 4;
+    }
+
+
+</script>

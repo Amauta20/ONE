@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<h1>Tabla de Multiplicar</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numero = parseInt(prompt("Ingrese numero"));
+
+    var multiplicador = 1;
+
+    imprimir("El número seleccionado es: " + numero);
+    saltarLinea();
+
+    imprimir("<h3>Lógica con While</h3>");
+
+    while (multiplicador <= 12){
+        imprimir(numero + " x " + multiplicador + " = " + numero * multiplicador);
+        multiplicador = multiplicador + 1;
+    }
+
+    saltarLinea();
+    saltarLinea();
+
+    imprimir("<h3>Lógica con For</h3>")
+
+    for(multiplicador = 1; multiplicador <= 12; multiplicador++){
+        imprimir(numero + " x " + multiplicador + " = " + numero * multiplicador);
+    }
+
+</script>
