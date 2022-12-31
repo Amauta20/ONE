@@ -1,0 +1,22 @@
+<canvas width="600" height="400" ></canvas>
+
+<script>
+    //Bases de canvas para trabajar
+    //Definición de pantalla y de pincel
+    
+    function dibujarCuadradoVerde(x){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = "darkgreen";
+        pincel.fillRect(x, 0, 50, 50);
+
+        pincel.strokeStyle = "black";
+        pincel.strokeRect(x, 0, 50, 50);
+    }
+
+    dibujarCuadradoVerde(0);
+    dibujarCuadradoVerde(50);
+    dibujarCuadradoVerde(100);
+
+</script>

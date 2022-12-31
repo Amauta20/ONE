@@ -1,0 +1,23 @@
+<canvas width="600" height="400" ></canvas>
+
+<script>
+    //Bases de canvas para trabajar
+    //Definición de pantalla y de pincel
+    
+    function dibujarCirculo(x, y, radio, color){
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    dibujarCirculo(290, 170, 10, "yellow");
+    dibujarCirculo(290, 190, 10, "red");
+    dibujarCirculo(290, 210, 10, "blue");
+    dibujarCirculo(270, 190, 10, "orange");
+    dibujarCirculo(310, 190, 10, "black");
+
+</script>
