@@ -1,0 +1,44 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");        
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0,0,600,400); 
+
+    function graficarCircunferencia(x,y,radio){
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x,y,radio,0,2*Math.PI);
+        pincel.fill();
+    }    
+
+    function limpiarPantalla(){
+        pincel.clearRect(0,0,600,400);
+    }
+
+    var x = 0;
+    var contar = 0;
+
+    function actualizarPantalla(){
+        if(contar == 0){
+            limpiarPantalla();
+            graficarCircunferencia(x, 20, 20);
+            x++;
+            if(x == 600){
+                contar = 1;
+            }
+        }
+        if(contar == 1){
+            limpiarPantalla();
+            graficarCircunferencia(x, 20, 20);
+            x--;
+            if(x == 0){
+                contar = 0;
+            } 
+        }
+    }
+
+    setInterval(actualizarPantalla,5);
+
+</script> 

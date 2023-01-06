@@ -1,0 +1,33 @@
+<canvas width="600" height="400" ></canvas>
+
+<script>
+    //Bases de canvas para trabajar
+    //Definición de pantalla y de pincel
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+    pincel.fillStyle = "lightgrey"; //Incluir nombres o codfigos #000
+    pincel.fillRect(0, 0, 600, 400); // Escribir un rectangulo
+
+    function mostrarAlerta(evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+        console.log(evento);
+        alert("Usted hizo clic");
+        alert("Eje x: " + x + " Eje y: " + y);
+    }
+
+    function dibujarCirculo(evento){
+        var x = evento.pageX - pantalla.offsetLeft;
+        var y = evento.pageY - pantalla.offsetTop;
+        
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x, y, 10, 0, 2*Math.PI);
+        pincel.fill();
+        console.log(x + "," + y)
+    }
+
+    pantalla.onclick = dibujarCirculo;
+    
+</script>
