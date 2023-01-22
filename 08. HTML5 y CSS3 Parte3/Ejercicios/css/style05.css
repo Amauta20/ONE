@@ -157,7 +157,7 @@ form{
     margin: 40px 0;
 }
 
-form label, form legend{
+form label, form p{
     display: block;
     font-size: 18px;
     margin: 0 0 10px;
@@ -172,39 +172,6 @@ form label, form legend{
 
 .checkbox{
     margin: 15px 0;
-}
-
-.enviar{
-    width: 25%;
-    padding: 10px 0;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    background-color: #088c19;
-    border: none;
-    border-radius: 5px;
-    transition: 2s;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background-color: #c78c19;
-    transform: scale(1.1);
-}
-
-table{
-    margin: 40px 40px;
-}
-
-thead{
-    background-color: #555555;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-td, th{
-    border: 1px #000000 solid;
-    padding: 8px 10px;
 }
 
 footer{

@@ -192,21 +192,6 @@ form label, form legend{
     transform: scale(1.1);
 }
 
-table{
-    margin: 40px 40px;
-}
-
-thead{
-    background-color: #555555;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-td, th{
-    border: 1px #000000 solid;
-    padding: 8px 10px;
-}
-
 footer{
     text-align: center;
     background: url(../imagenes/bg.jpg);
