@@ -12,7 +12,7 @@ class Cuenta{
 	
 	private static int total = 0;
 	
-	public Cuenta(int agencia) {
+	public Cuenta(int agencia, int numero) {
 		
 		if(agencia <= 0) {
 			System.out.println("No se permite este valor");
@@ -23,6 +23,8 @@ class Cuenta{
 		}
 		total++;
 		System.out.println("Se han creado " + total + " cuentas" );
+		
+		this.numero = numero;
 		
 	}
 	

@@ -1,35 +1,39 @@
+package bytebankheredado;
 // Entidad Cuenta
 // Saldo
 // Agencia
 // Numero
 // Titular
 
-class Cuenta{
-	private double saldo;
+public abstract class Cuenta{
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular = new Cliente();
 	
 	private static int total = 0;
 	
-	public Cuenta(int agencia) {
+	public Cuenta(int agencia, int numero) {
 		
 		if(agencia <= 0) {
 			System.out.println("No se permite este valor");
 			this.agencia = 1;
 		}else {
 			this.agencia = agencia;
-			System.out.println("Se asigno agencia correctamente");
 		}
-		total++;
-		System.out.println("Se han creado " + total + " cuentas" );
+		
+		this.numero = numero;
 		
 	}
 	
 	//Metodo que no retorna valor
-	void depositar(double valor){
-		this.saldo += valor;
+	public abstract void depositar(double valor);
+	
+	//Metodo de sacar dinero
+	public void sacar(double valor){
+		this.saldo -= valor;
 	}
+	
 	
 	//Metodo que si retorna valor
 	public boolean retirar(double valor){
@@ -38,13 +42,12 @@ class Cuenta{
 			return true;
 		}
 		return false;
-		
 	}
 	
 	//Metodo transferir
 	public boolean transferir(double valor, Cuenta cuenta) {
 		if(this.saldo >= valor) {
-			this.saldo -= valor;
+			this.sacar(valor);
 			cuenta.depositar(valor);
 			return true;
 		}
