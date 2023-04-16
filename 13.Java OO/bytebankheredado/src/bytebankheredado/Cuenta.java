@@ -36,12 +36,11 @@ public abstract class Cuenta{
 	
 	
 	//Metodo que si retorna valor
-	public boolean retirar(double valor){
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
-			return true;
-		}
-		return false;
+	public void retirar(double valor){
+		if(this.saldo < valor) {
+			throw new SaldoInsuficienteException("No tiene saldo suficiente");
+		}this.saldo -= valor;
+
 	}
 	
 	//Metodo transferir

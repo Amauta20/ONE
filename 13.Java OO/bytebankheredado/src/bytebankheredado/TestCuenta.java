@@ -10,6 +10,8 @@ public class TestCuenta {
 		cc.depositar(2000);
 		cc.transferir(1000, ca);
 		
+		cc.retirar(5000);
+		
 		System.out.println(cc.getSaldo());
 		System.out.println(ca.getSaldo());
 		
