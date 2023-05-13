@@ -1,0 +1,46 @@
+
++ CLIENTES
+DNI
+NOMBRE COMPLETO
+DIRECCION1
+DIRECCION2
+BARRIO
+CIUDAD
+ESTADIO
+CP
+EDAD
+SEXO
+LIMITE_CREDITO
+VOLUMEN_COMPRA
+PRIMERA_COMPRA
+
+
++ PRODUCTOS
+PRODUCTO
+NOMBRE
+ENVASE
+VOLUMEN
+SABOR
+PRECIO
+
+
++ VENDEDORES
+MATRICULA
+NOMBRE
+PORCENTAJE_COMISION
+
+
+
+
+USE jugos;
+
+INSERT INTO tbproductos(
+producto, nombre, envase, volumen, sabor,
+precio) VALUES ('695594', 'Festival de Sabores', 'Botella PET',
+'1.5 Litros', 'Asaí', 18.51);
+
+INSERT INTO tbproductos(
+producto, nombre, envase, volumen, sabor,
+precio) VALUES ('1041119', 'Línea Citrus', 'Botella de Vidrio',
+'700 ml', 'Lima', 4.90);
+

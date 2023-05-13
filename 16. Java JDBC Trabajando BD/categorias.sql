@@ -1,0 +1,5 @@
+CREATE TABLE categoria (
+id INT AUTO_INCREMENT,
+nombre VARCHAR(50) NOT NULL,
+PRIMARY KEY (id))
+ENGINE = InnoDB;
