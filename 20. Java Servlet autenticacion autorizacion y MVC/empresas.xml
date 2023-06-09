@@ -1,0 +1,12 @@
+<list>
+  <com.alura.gerenciador.model.Empresas>
+    <id>1</id>
+    <nombre>Alura</nombre>
+    <fechaAbertura>2023-06-08 22:57:23.144 UTC</fechaAbertura>
+  </com.alura.gerenciador.model.Empresas>
+  <com.alura.gerenciador.model.Empresas>
+    <id>2</id>
+    <nombre>Caelum</nombre>
+    <fechaAbertura>2023-06-08 22:57:23.144 UTC</fechaAbertura>
+  </com.alura.gerenciador.model.Empresas>
+</list>

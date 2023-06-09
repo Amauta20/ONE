@@ -1,0 +1,12 @@
+<list>
+  <empresas>
+    <id>1</id>
+    <nombre>Alura</nombre>
+    <fechaAbertura>2023-06-08 23:02:09.868 UTC</fechaAbertura>
+  </empresas>
+  <empresas>
+    <id>2</id>
+    <nombre>Caelum</nombre>
+    <fechaAbertura>2023-06-08 23:02:09.868 UTC</fechaAbertura>
+  </empresas>
+</list>
