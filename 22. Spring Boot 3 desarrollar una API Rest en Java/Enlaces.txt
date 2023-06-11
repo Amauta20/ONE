@@ -1,0 +1,16 @@
+https://start.spring.io/
+
+{
+"nombre": "Rodrigo Lopez",
+"email":"rodrigo.lopez@voll.med",
+"documento":"123456",
+"especialidad":"ortopedia",
+"direccion":{
+	"calle":"calle 1",
+	"distrito":"distrito 1",
+	"ciudad":"Lima",
+	"numero":"123",
+	"complemento":"a"
+}
+
+}
